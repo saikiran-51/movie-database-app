@@ -1,0 +1,19 @@
+.movies-page {
+  background-color: #0f172a;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.page-heading {
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.movies-list {
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+}

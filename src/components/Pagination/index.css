@@ -1,0 +1,22 @@
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.pagination-button {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  height: 40px;
+  width: 90px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.page-number {
+  color: #ffffff;
+  font-size: 18px;
+}

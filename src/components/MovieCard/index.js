@@ -21,7 +21,7 @@ const MovieCard = props => {
 
       <p className="movie-rating">{voteAverage}</p>
 
-      <Link to={`/movie/${id}`}>
+      <Link to={`/movies/${id}`}>
         <button type="button" className="details-button">
           View Details
         </button>

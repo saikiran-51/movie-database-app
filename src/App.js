@@ -16,13 +16,9 @@ const App = () => (
 
     <Switch>
       <Route exact path="/" component={Popular} />
-
       <Route exact path="/top-rated" component={TopRated} />
-
       <Route exact path="/upcoming" component={Upcoming} />
-
       <Route exact path="/movie/:id" component={MovieDetails} />
-
       <Route exact path="/search/:query" component={SearchResults} />
     </Switch>
   </BrowserRouter>

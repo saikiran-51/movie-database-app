@@ -1,27 +1,24 @@
 import './index.css'
 
 const Pagination = props => {
-  const {page, setPage, totalPages} = props
+  const {page, setPage} = props
 
   const onClickPrevPage = () => {
     if (page > 1) {
-      setPage(page - 1)
+      setPage(prev => prev - 1)
     }
   }
 
   const onClickNextPage = () => {
-    if (page < totalPages) {
-      setPage(page + 1)
-    }
+    setPage(prev => prev + 1)
   }
 
   return (
     <div className="pagination-container">
       <button
         type="button"
-        onClick={onClickPrevPage}
-        disabled={page === 1}
         className="pagination-button"
+        onClick={onClickPrevPage}
       >
         Prev
       </button>
@@ -30,9 +27,8 @@ const Pagination = props => {
 
       <button
         type="button"
-        onClick={onClickNextPage}
-        disabled={page === totalPages}
         className="pagination-button"
+        onClick={onClickNextPage}
       >
         Next
       </button>
